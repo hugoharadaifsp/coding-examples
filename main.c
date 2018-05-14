@@ -4,12 +4,13 @@
 
 #include <stdio.h>
 #include "add.h"
+#include "sub.h"
 
 int main(){
 	int op, op1, op2;
 	printf("Escolha uma operação!!\n");
 	printf("0 - adição\n");
-	printf("1 - subtração\n"); 
+	printf("1 - subtração\n");
 	printf("2 - multiplicação\n");
 	printf("3 - divisão\n");
 
@@ -24,9 +25,9 @@ int main(){
 	switch(op){
 		case 0:
 			printf("O resultado e: %d\n", add(op1,op2) ); //do addition
-			break;	
-		case 1: 
-			// do subtraction
+			break;
+		case 1:
+			printf("O resultado e: %d\n", sub(op1,op2) ); //do addition
 			break;
 		default:
 				printf("Argumento invalido\n");
