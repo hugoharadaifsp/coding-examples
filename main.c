@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include "add.h"
 #include "sub.h"
+#include "mlt.h"
+#include "div.h"
 
 int main(){
 	int op, op1, op2;
@@ -26,11 +28,20 @@ int main(){
 		case 0:
 			printf("O resultado e: %d\n", add(op1,op2) ); //do addition
 			break;
+
 		case 1:
-			printf("O resultado e: %d\n", sub(op1,op2) ); //do addition
+			printf("O resultado e: %d\n", sub(op1,op2) ); //do subtraction
 			break;
-		default:
-				printf("Argumento invalido\n");
+
+		case 2:
+			printf("O resultado e: %d\n", mlt(op1,op2) ); //do multiplication
+			break;
+
+		case 3:
+			printf("O resultado e: %d\n", div(op1,op2) ); //do division
+			break;
+
+		default: printf("Argumento invalido\n");
 	}
 
 	return 0;
