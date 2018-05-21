@@ -5,12 +5,15 @@
 #include <stdio.h>
 #include "add.h"
 #include "sub.h"
+#include "mult.h"
 
 int main(){
 	int op, op1, op2;
 	printf("Escolha uma operação!!\n");
 	printf("0 - adição\n");
 	printf("1 - subtração\n");
+	printf("2 - multiplicação\n");
+	printf("3 - divisão\n");
 
 	fflush(stdin);
 	scanf("%d", &op);
@@ -27,7 +30,12 @@ int main(){
 		case 1:
 			printf("O resultado e: %d\n", sub(op1,op2) ); //do addition
 			break;
-
+        case 2:
+            printf("O resultado e: %d\n", mult(op1,op2) ); //do addition
+			break;
+        case 3:
+            printf("O resultado e: %d\n", div(op1,op2) ); //do addition
+			break;
 		default:
 				printf("Argumento invalido\n");
 	}
