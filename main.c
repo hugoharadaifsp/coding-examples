@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include "add.h"
 #include "sub.h"
+#include "mul.h"
+#include "div.h"
 
 int main(){
 	int op, op1, op2;
@@ -28,6 +30,12 @@ int main(){
 			break;
 		case 1:
 			printf("O resultado e: %d\n", sub(op1,op2) ); //do addition
+			break;
+		case 2:
+			printf("O resultado e: %d\n", mul(op1,op2) ); //do addition
+			break;
+		case 3:
+			printf("O resultado e: %d\n", div(op1,op2) ); //do addition
 			break;
 		default:
 				printf("Argumento invalido\n");
